@@ -1,3 +1,4 @@
+// components/Footer.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
@@ -11,6 +12,7 @@ import {
   Heart,
   ArrowRight
 } from 'lucide-react';
+import Logo from './Logo'; // Import the Logo component
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -102,20 +104,16 @@ const Footer: React.FC = () => {
 
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Company Info */}
+          {/* Company Info - Updated */}
           <motion.div 
             className="col-span-1 md:col-span-2"
             variants={itemVariants}
           >
-            <motion.h3 
-              className="text-3xl font-serif font-bold mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              Fes
-            </motion.h3>
+            <Logo 
+              size="lg" 
+              withText={true}
+              className="mb-6"
+            />
             <motion.p 
               className="text-blue-100 mb-6 leading-relaxed max-w-md"
               variants={itemVariants}
@@ -146,7 +144,7 @@ const Footer: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Quick Links */}
+          {/* Quick Links - remains the same */}
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               Quick Links
@@ -171,7 +169,7 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Contact Info */}
+          {/* Contact Info - remains the same */}
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               Contact Us
@@ -202,7 +200,7 @@ const Footer: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright - remains the same */}
         <motion.div 
           className="border-t border-blue-800/50 mt-12 pt-8 text-center flex flex-col md:flex-row justify-between items-center"
           variants={itemVariants}

@@ -1,8 +1,10 @@
+// components/Navigation.tsx
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
+import Logo from "./Logo";
 
 interface NavItem {
   name: string;
@@ -77,39 +79,25 @@ const Navigation: React.FC = () => {
       transition={{ duration: 0.6 }}
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Top left subtle circle */}
+        {/* Background circles remain the same */}
         <div className="absolute top-0 left-0 w-16 h-16 bg-blue-300/30 rounded-full -translate-x-8 -translate-y-8" />
-
-        {/* Top right circle */}
         <div className="absolute top-0 right-0 w-20 h-20 bg-purple-300/40 rounded-full translate-x-10 -translate-y-10" />
-
-        {/* Bottom left circle */}
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-200/50 rounded-full -translate-x-12 translate-y-8" />
-
-        {/* Bottom right circle */}
         <div className="absolute bottom-0 right-0 w-28 h-28 bg-purple-300/35 rounded-full translate-x-14 translate-y-10" />
-
-        {/* Center right small circle */}
         <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-blue-300/25 rounded-full" />
-
-        {/* Center left small circle */}
         <div className="absolute top-1/3 left-1/4 w-10 h-10 bg-purple-300/30 rounded-full" />
       </div>
 
       <div className="container mx-auto px-6 py-4 relative z-10">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center group">
-            <motion.span
-              className="text-2xl font-bold text-blue-900 font-serif"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              Fes
-            </motion.span>
-          </Link>
+          {/* Logo - Updated */}
+          <Logo 
+            size="lg" 
+            className="group"
+            withText={true}
+          />
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - rest remains the same */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <div key={item.name} className="relative group">
@@ -133,7 +121,7 @@ const Navigation: React.FC = () => {
                       }}
                     />
                   )}
-                  {location.pathname !== item.href && ( // Fixed the comparison
+                  {location.pathname !== item.href && (
                     <motion.div
                       className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full"
                       transition={{ duration: 0.3 }}
@@ -141,7 +129,6 @@ const Navigation: React.FC = () => {
                   )}
                 </Link>
 
-                {/* Submenu */}
                 {item.subItems && (
                   <div className="absolute top-full left-0 w-48 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                     <div className="bg-white/95 backdrop-blur-md rounded-xl shadow-2xl p-2 border border-gray-100">
@@ -161,7 +148,7 @@ const Navigation: React.FC = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button - remains the same */}
           <div className="hidden lg:block">
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -172,14 +159,13 @@ const Navigation: React.FC = () => {
                 to="/about"
                 className="bg-blue-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition-colors shadow-lg relative overflow-hidden block"
               >
-                {/* Button background effect */}
                 <span className="relative z-10">Learn more</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300" />
               </Link>
             </motion.div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button - remains the same */}
           <div className="lg:hidden">
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -195,7 +181,7 @@ const Navigation: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - remains the same */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
@@ -205,7 +191,6 @@ const Navigation: React.FC = () => {
               exit="closed"
               className="lg:hidden mt-4 overflow-hidden relative z-20"
             >
-              {/* Mobile menu background circles */}
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-blue-100/30 rounded-full translate-x-8 -translate-y-8" />
                 <div className="absolute bottom-0 left-0 w-20 h-20 bg-purple-100/20 rounded-full -translate-x-8 translate-y-8" />
@@ -234,7 +219,6 @@ const Navigation: React.FC = () => {
                         )}
                       </Link>
 
-                      {/* Mobile Submenu */}
                       {item.subItems && (
                         <div className="pl-6 mt-1 space-y-2">
                           {item.subItems.map((subItem) => (
@@ -252,7 +236,6 @@ const Navigation: React.FC = () => {
                     </motion.div>
                   ))}
 
-                  {/* Mobile CTA Button */}
                   <motion.div
                     variants={itemVariants}
                     whileTap={{ scale: 0.95 }}
