@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
@@ -12,7 +11,7 @@ import {
   Heart,
   ArrowRight
 } from 'lucide-react';
-import Logo from './Logo'; // Import the Logo component
+import Logo from './Logo';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -110,7 +109,7 @@ const Footer: React.FC = () => {
             variants={itemVariants}
           >
             <Logo 
-              size="lg" 
+              size="xl" 
               withText={true}
               className="mb-6"
             />
