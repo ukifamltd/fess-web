@@ -71,17 +71,17 @@ const Footer: React.FC = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      text: "123 Company Street, City, State 12345"
+      text: "Mayange, Bugesera"
     },
     {
       icon: Phone,
-      text: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      text: '+250 786 328 657',
+      href: 'tel:+250786328657'
     },
     {
       icon: Mail,
-      text: "info@company.com",
-      href: "mailto:info@company.com"
+      text: 'info@fidrofa.com',
+      href: 'mailto:info@fidrofa.com'
     }
   ];
 

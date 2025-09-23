@@ -44,13 +44,13 @@ const Header: React.FC = () => {
   const contactInfo = [
     {
       icon: Phone,
-      text: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      text: '+250 786 328 657',
+      href: 'tel:+250786328657'
     },
     {
       icon: Mail,
-      text: 'info@fessweb.com',
-      href: 'mailto:info@fessweb.com'
+      text: 'info@fidrofa.com',
+      href: 'mailto:info@fidrofa.com'
     }
   ];
 

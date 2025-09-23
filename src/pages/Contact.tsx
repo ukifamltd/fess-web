@@ -183,7 +183,7 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="font-semibold font-sans">Email</p>
                   <p className="text-gray-600 font-sans">
-                    info@fidrofaschool.com
+                    info@fidrofa.com
                   </p>
                 </div>
               </motion.div>
@@ -197,7 +197,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-semibold font-sans">Phone</p>
-                  <p className="text-gray-600 font-sans">+250 788 123 456</p>
+                  <p className="text-gray-600 font-sans">+250 786 328 657</p>
                 </div>
               </motion.div>
 
@@ -211,7 +211,7 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="font-semibold font-sans">Address</p>
                   <p className="text-gray-600 font-sans">
-                    Eastern Province, Bugesera District, 2km from Kigali
+                    Eastern Province, Bugesera District, Mayange Sector 2km from Kigali
                     International Airport
                   </p>
                 </div>
