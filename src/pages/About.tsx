@@ -131,7 +131,7 @@ const About: React.FC = () => {
       <HeroBanner
         title="About Fidrofa Excellence School"
         subtitle="Providing quality education and skills training for young minds in Bugesera District"
-        backgroundImage="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2092&q=80"
+        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504119097_10236865811602484_4500494512390512443_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=uO0Md0VhhWcQ7kNvwH4AJ1Y&_nc_oc=AdnEtmQ_hBM6NxWd4gIt-DjkwuhtlcxhnY6inAvQVru6njMNdqjSDDRdVV7E40L1BXI_b_gvs9U4rAHvCLYIrufb&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=9wIwi89vOUvLDRdZMFqnDQ&oh=00_AfZUwRSMeSDhYbT7-_dtPHugBRI3rOh3bqX_5jJZZcgJOQ&oe=68DA022B"
       />
 
       <div className="container mx-auto px-6 py-20 relative">

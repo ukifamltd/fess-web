@@ -152,7 +152,7 @@ const Contact: React.FC = () => {
       <HeroBanner
         title="Get in Touch"
         subtitle="We'd love to hear from you and answer any questions"
-        backgroundImage="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2094&q=80"
+        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/503350238_10236865812562508_8223091699224919246_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yKkXL3xEBQIQ7kNvwG9Vu-l&_nc_oc=AdmchcUln3cbmrO24H0Vg1iMAoZpR-mcGhon2_GAlH-kH7_s8vytSw2sCVsCtPuuwWk6LHH8o5_X4A4ogrLAYuQx&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=rhQTiRmuqNU5IrPgyFh2hA&oh=00_AfabYAuhLzIofBLQmloGnPDf0IelldyInYZntuUgRIdjwQ&oe=68D9DF24"
         overlayColor="from-purple-800/80 to-pink-900/80"
       />
 
@@ -211,8 +211,7 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="font-semibold font-sans">Address</p>
                   <p className="text-gray-600 font-sans">
-                    Eastern Province, Bugesera District, Mayange Sector 2km from Kigali
-                    International Airport
+                    Eastern Province, Bugesera District, Mayange Sectory, Taba Cell
                   </p>
                 </div>
               </motion.div>
@@ -244,8 +243,7 @@ const Contact: React.FC = () => {
 
               <div className="mt-4">
                 <p className="text-gray-600 font-sans text-sm">
-                  Eastern Province, Bugesera District, just 2km from Kigali
-                  International Airport
+                  Eastern Province, Bugesera District, Mayange Sectory, Taba Cell
                 </p>
               </div>
             </div>

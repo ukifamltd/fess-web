@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       icon: Facebook,
-      href: "#",
+      href: 'https://www.facebook.com/groups/fidrofaexcellencyschool',
       color: "hover:text-blue-400",
       label: "Facebook"
     },
@@ -128,6 +128,7 @@ const Footer: React.FC = () => {
                 <motion.a
                   key={index}
                   href={social.href}
+                  target='blank'
                   className={`p-2 bg-white/10 rounded-full backdrop-blur-sm transition-all duration-300 ${social.color}`}
                   whileHover={{ 
                     scale: 1.1, 
@@ -143,7 +144,7 @@ const Footer: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Quick Links - remains the same */}
+          {/* Quick Links*/}
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               Quick Links
@@ -168,7 +169,7 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Contact Info - remains the same */}
+          {/* Contact Info */}
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               Contact Us
@@ -199,7 +200,7 @@ const Footer: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Copyright - remains the same */}
+        {/* Copyright */}
         <motion.div 
           className="border-t border-blue-800/50 mt-12 pt-8 text-center flex flex-col md:flex-row justify-between items-center"
           variants={itemVariants}

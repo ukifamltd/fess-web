@@ -40,7 +40,7 @@ const Programs: React.FC = () => {
       <HeroBanner
         title="Our Educational Programs"
         subtitle="Discover our comprehensive curriculum designed for excellence"
-        backgroundImage="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/505578561_10236956218942611_6551636429546177990_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wS5OEERXwkcQ7kNvwFWkDdd&_nc_oc=Adn_mn0xXhYa9dATSOMw6UJrkcHTiA_A_lnporCQFi3Ua2bQk56OrKpcem4XQUqCUEiqUDKNBHf4aj9K38LhDbGx&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=8Fav2_SWu3sWsmkX4HTDLw&oh=00_AfZguwHXeizAZZZWC-5gJLNlC-1pEtxAErhbFpvZKuFuQA&oe=68D9F0AC"
         overlayColor="from-green-800/80 to-teal-900/80"
       />
 

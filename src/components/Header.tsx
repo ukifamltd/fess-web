@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   const socialLinks = [
     {
       icon: Facebook,
-      href: '#',
+      href: 'https://www.facebook.com/groups/fidrofaexcellencyschool',
       color: 'hover:text-blue-400'
     },
     {
@@ -78,6 +78,8 @@ const Header: React.FC = () => {
                   <motion.a
                     key={index}
                     href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 group"
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
@@ -107,6 +109,8 @@ const Header: React.FC = () => {
                     <motion.a
                       key={index}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`p-1 transition-colors ${social.color}`}
                       whileHover={{ scale: 1.2, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}

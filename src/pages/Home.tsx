@@ -57,7 +57,7 @@ const Home: React.FC = () => {
       description: 'Early childhood development with full care, meals, and learning activities',
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
-      image: 'https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: 'https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/496253219_10236521978806879_3794051767976139230_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=1FgD1F2SJ8wQ7kNvwGSHBoH&_nc_oc=AdlngSTUJ_kFCPfNah9HGlE2N8Ghnjg8k2yMv1qcrsaJpYR8bakplTif2kVj6gcHYqC6f9Rm_Q0gmVHFUo8R6Woy&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=xvvHIPy7Ata0PWZHLf1muQ&oh=00_AfY3FAPKkKjT7IHrtW_-GSmBI04dbm19NDJ5qwfIlSrkFA&oe=68D9E9D4'
     },
     {
       icon: Clock,
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
       description: 'Half-day program running until 11:45AM with quality early education',
       color: 'text-green-600',
       bgColor: 'bg-green-100',
-      image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: 'https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/505709843_10236956217542576_6828824210782066492_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=7JAOiZcrui0Q7kNvwFE41CC&_nc_oc=AdlkkkGt3JjKgsdFSByuCPsrVqfQT9U3uxRGZloa13Qw6QzTTQLzhPqUXptMIvOjQZ3wGOyT1hfeh9GzmVHMALJI&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=DwBL2HLnk-h4OCFAqNcrDQ&oh=00_AfagechqB8hdG_1RCCOuadNvR73M4zFNFzKqjj5oerDxNA&oe=68D9EFA6'
     },
     {
       icon: GraduationCap,
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
       description: 'Full-day program until 6PM with English instruction and comprehensive curriculum',
       color: 'text-purple-600',
       bgColor: 'bg-purple-100',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: 'https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/552197773_10238488913219010_1648716343769207569_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=ds6MZ-f_T7sQ7kNvwFRh435&_nc_oc=Adm1bqcRyIy4dTnbdoLog3lHL4nP_x6Fo3Kw5Y0ujexyRzCbmku5WmLrJ0gzQ-volQFM57aKThAqCJV4UZARph7C&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=dctMSYe_7nN3LBgNsOKchA&oh=00_AfZnSERPKWvIJAYJ_Pdgt-QbqX3s2PWVslEKDLTcxyHQaw&oe=68D9E65B'
     }
   ];
 
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-2 text-gray-800">Our Location</h3>
             <p className="text-gray-600 text-lg">
-              Eastern Province, Bugesera District, 2km from Kigali International Airport
+              Eastern Province, Bugesera District, Mayange Sectory, Taba Cell
             </p>
           </motion.div>
         </div>

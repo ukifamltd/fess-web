@@ -20,8 +20,8 @@ const Gallery: React.FC = () => {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Students in Classroom",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/552197773_10238488913219010_1648716343769207569_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=ds6MZ-f_T7sQ7kNvwFRh435&_nc_oc=Adm1bqcRyIy4dTnbdoLog3lHL4nP_x6Fo3Kw5Y0ujexyRzCbmku5WmLrJ0gzQ-volQFM57aKThAqCJV4UZARph7C&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=yrZu0-73MmL6ih5W5HL-dQ&oh=00_AfZvDWv1m4OwK4CE8Ltsi9gyzwRIYSeqk6q0DnYLRdtTvg&oe=68D9E65B",
+      title: "Primary School Students",
       description:
         "Our primary students engaged in interactive learning activities",
       category: "academics",
@@ -29,90 +29,114 @@ const Gallery: React.FC = () => {
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Science Experiment",
-      description: "Hands-on science experiments that spark curiosity",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/544988261_10238271383860912_8044838255817523040_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=pT0WVA2NDigQ7kNvwH5ZLnX&_nc_oc=AdmnBmDw2WTsKKtbdMseCL2x7PSa3apC-5pRn0J8E43ZO0-9hl0oPQXisI8Wq04JooFvG41e-yybW1oOYy3UcZ5h&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=yRvoAGsVxLWORcuGBGBP6w&oh=00_Afbo-KnH8V4qlHVjJZeZibSiN-35i3iqXtuwcmh1ppHPLA&oe=68DA06B4",
+      title: "Excellence performance Experiment",
+      description: "Fidrofa Excellence School one of the Best performing schools in the country.",
       category: "academics",
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Art Class",
-      description: "Young artists expressing their creativity",
-      category: "arts",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/539213838_10238221287888544_2473894096630108487_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=zuKYODGz_EgQ7kNvwH2_jYX&_nc_oc=AdkbvASntwJiHVjfyRJHVHEYDxaxjtgwPLoQydc4pI4UCGC6xU5UxJCjmxi6Nm2ZXv8qB6pzzfBrr36zC1NRZ3L3&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=Wkh14b63n1AMP1Eo-D0XcA&oh=00_AfYOvrwPgDeyH_H7Kff2kBjtNzeNt5wSjF7J7-00R86zWQ&oe=68D9DB34",
+      title: "The firstborns of Fidrofa Excellence School (FES)",
+      description: "Entere primary 6 class passed the national exam for Secondary school entrance",
+      category: "academics",
     },
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/505544553_10237035661968637_2778733310005832593_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wTxXK1JEX_AQ7kNvwEni3O4&_nc_oc=Adn6WOVsVXDsbjPpXLxi9GDMWfgGjjsvSV6y6cibbtD-Pf0UAdno-TAScjYTf_x9iJ_9WZL9TWsdrYx61ELmUFto&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=fzKGReUo8op4WtPKIWluoQ&oh=00_AfaB5t26-uNawXdAZ2jFreCjm_DVcnA6GcleKYnxchP6AA&oe=68DA0183",
       title: "Sports Day",
-      description: "Annual sports competition promoting teamwork and fitness",
+      description: "We added some playing tools (tires) in our Nursery school and children like them a lot",
       category: "sports",
     },
     {
       id: 5,
       image:
-        "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Music Performance",
-      description: "Students showcasing their musical talents",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504220503_10236895573426511_5145459142044560845_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=9UfKyotYc-cQ7kNvwF_ZCyD&_nc_oc=AdnF_SNzonK8_arGjLPjUZKBtq2EKPwMKETzMXTsH-z1r2KhVB8Zc9s8eYnrIHfLlVSgeyCTCg63yx8J1hMkJ4yv&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=Pd5sDkR-QmIj48ivt2663g&oh=00_AfY4CE71UD_emtAsl4eoUdVbF5LEa0wZtwwqmzmu-adv1g&oe=68D9E59E",
+      title: "Art Class",
+      description: "To improve quality in education is to create a better future for learners",
       category: "arts",
     },
     {
       id: 6,
       image:
-        "https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Library Time",
-      description: "Quiet reading time in our well-stocked library",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/503350238_10236865812562508_8223091699224919246_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yKkXL3xEBQIQ7kNvwG9Vu-l&_nc_oc=AdmchcUln3cbmrO24H0Vg1iMAoZpR-mcGhon2_GAlH-kH7_s8vytSw2sCVsCtPuuwWk6LHH8o5_X4A4ogrLAYuQx&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=u68s89fZMFttceaCyDcHsg&oh=00_AfYdQ-v54JNwl_V_W8Ci8YfesUId86h2pYqLePW7IKboEA&oe=68D9DF24",
+      title: "Nursery Students",
+      description: "break time for the nursery students",
       category: "academics",
     },
     {
       id: 7,
       image:
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Outdoor Activities",
-      description: "Students enjoying outdoor play and learning",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/505650793_10236956217142566_7486367611098816615_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=SoaOhFuPkfsQ7kNvwGhs604&_nc_oc=Adm9vkluy2qCMC5XrqRIvEBYoDJESu8UXuhvG_nzJrlFlDLKZFdzZPhtVit1bBt3ED6hNJOLhRubNfnhoojcp2UN&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=w3HYPKMMG_Fd9Lp756PpzQ&oh=00_AfbOcmiw--my2a1KSHJL0HFijd2dKh010n1Avg4ahJEGJw&oe=68D9EB8F",
+      title: "Activities",
+      description: "Students enjoying daily meal",
       category: "activities",
     },
     {
       id: 8,
       image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "School Event",
-      description: "Annual cultural day celebration",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/503248169_10236850185971853_6156169674575137824_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Ul6wpR6MrKsQ7kNvwFj3e0C&_nc_oc=AdnM6RFSIfTE33aav7Lu3uPZOZ2iWq-SEydr9sQDXJRQt7zeB8W7nztonzJjrwza5sCT-AQOBRNfLUe3d68X5-1A&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=ijDIFjItZssenfZh_Q_qMA&oh=00_AfZTsAuQF3ivhypcWdS8Lr85NJ2E9m09VwRL1OrlZaTs0w&oe=68D9F441",
+      title: "Teacher Training Event",
+      description: "Training teachers is one of the keys to unlock quality Education.",
       category: "events",
     },
     {
       id: 9,
       image:
-        "https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Group Project",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504169272_10236879988356894_8937222913421438917_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=KminT72Dm0IQ7kNvwEM-FlJ&_nc_oc=Adn7_h3crwP549bIdf9KbZlu816OxYXGDokElWU3HgMuiNKvBo3GM9b5bIUlYdDn-cPlxxN5EJ7oW_0DyMRKWX4E&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=7zLwZE-t3kXxqQ4vb968hA&oh=00_AfbqFSayOjmj94zEYYhnL888kLhpt4YOn2v2ple74-8ppQ&oe=68D9E7DF",
+      title: "Group Activities",
       description: "Collaborative learning in action",
       category: "academics",
     },
     {
       id: 10,
       image:
-        "https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Nature Walk",
-      description: "Exploring the environment around our school",
-      category: "activities",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504119097_10236865811602484_4500494512390512443_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=uO0Md0VhhWcQ7kNvwH4AJ1Y&_nc_oc=AdnEtmQ_hBM6NxWd4gIt-DjkwuhtlcxhnY6inAvQVru6njMNdqjSDDRdVV7E40L1BXI_b_gvs9U4rAHvCLYIrufb&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=U6TesivQ-gglFEY-XT53XA&oh=00_AfZq7T3HWjajxIPtovz-eCalUKjW9GjrvLX2b7GTagV7Yg&oe=68DA022B",
+      title: "Group Activities",
+      description: "Collaborative learning in action",
+      category: "academics",
     },
     {
       id: 11,
       image:
-        "https://images.unsplash.com/photo-1541698444084-5c0cf4bafc4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Award Ceremony",
-      description: "Celebrating student achievements and milestones",
-      category: "events",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/501296265_10236770465538892_4877964851732663954_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=PVobOakHj48Q7kNvwHyG2VZ&_nc_oc=AdnHNwmrRU2l8sTGyJJYY4RvSEKP52jdr9L9YdAPdun95FMrj_Q_N7t25EB2aWPZ3z0r69uslYwxo1N6Nfuo24x0&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=erBvnbDdacZRmM5QvHNXEQ&oh=00_AfYO3SGe97HAqsGNR8BxzX6uOCLJIUyU8ZKhEtlvNyGc2g&oe=68DA0A31",
+      title: "Sports Day",
+      description: "Play time ",
+      category: "sports",
     },
     {
       id: 12,
       image:
-        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      title: "Teacher Guidance",
-      description: "Dedicated teachers providing individual attention",
-      category: "academics",
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/539213838_10238221287888544_2473894096630108487_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=zuKYODGz_EgQ7kNvwH2_jYX&_nc_oc=AdkbvASntwJiHVjfyRJHVHEYDxaxjtgwPLoQydc4pI4UCGC6xU5UxJCjmxi6Nm2ZXv8qB6pzzfBrr36zC1NRZ3L3&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=QRivieY4a-0t4F-XVlFb7w&oh=00_AfaUnsGvU9VjC2Ldrkkmyfa22tyXMbYmfC1UfrP6bWg4EA&oe=68D9DB34",
+      title: "Award Ceremony",
+      description: "Celebrating student achievements and milestones",
+      category: "events",
+    },
+   {
+      id: 13,
+      image:
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/496253219_10236521978806879_3794051767976139230_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=1FgD1F2SJ8wQ7kNvwGSHBoH&_nc_oc=AdlngSTUJ_kFCPfNah9HGlE2N8Ghnjg8k2yMv1qcrsaJpYR8bakplTif2kVj6gcHYqC6f9Rm_Q0gmVHFUo8R6Woy&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=lbM0JdtNyqudFc0BfkL4jA&oh=00_AfajuBCcEXbtVgclr8X4UHk_0qUqDrm4q1PRL6zocjAxfw&oe=68D9E9D4",
+      title: "Art Class",
+      description: "Excellency",
+      category: "arts",
+    },
+    {
+      id: 14,
+      image:
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504007443_10236900120100175_5375278529150744588_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=gZ0xfNBtZasQ7kNvwEtl6tp&_nc_oc=AdlGRXRG52hMLhyOXMX4imXwvW1b_ecO7PxGFaeLaCOSIsZ0WRhoEoIV8j4i640CXkT5bVwQakEiVODobickluG1&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=ojbn_OD_AgC-cKXmOZ1iAg&oh=00_AfbZ5i5RGnQ4OoKgmx6Me2rNafvckjqFX7lO9Q49GwOhIw&oe=68D9D693",
+      title: "Activities",
+      description: "Gahunda yabakuru (Adults programmes) yo kwiga icyongereza",
+      category: "activities",
+    },
+    {
+      id: 15,
+      image:
+        "https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/494443912_10236410899869975_2278020094443652144_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Y4-5Dmx5UCIQ7kNvwGuaE2w&_nc_oc=AdlPkNcKGlAua0OlwCRhosVQBXIWivu8bWEuA3qgcNVL9YR67XJ_6QVPHnLNZ2DH4AqAFMdYRwXZf02F14J-LlN6&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=UAjl3Hha5J54u34K-KVKtg&oh=00_AfYDkmxq57kOEIL24ElWCtdXlr_JJ3EqqPn7f46WPzjp1A&oe=68D9EDBC",
+      title: "Break time",
+      description: "Play time ",
+      category: "sports",
     },
   ];
 
@@ -223,7 +247,7 @@ const Gallery: React.FC = () => {
       <HeroBanner
         title="Our Gallery"
         subtitle="A glimpse into life at Fidrofa Excellence School"
-        backgroundImage="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/516870622_10237460947200502_111760779889817856_n.jpg?stp=dst-jpg_s280x280_tt6&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=xJ2VJm5MvOEQ7kNvwG-htVk&_nc_oc=Adm0EvI2iG4n8Njmujo-l8du7IYzUmTt4YXyjdO_Cx7IGNwXUOAbd4PMXOQ_umP_65aW8vvMWd9qof5JF5kzpc-T&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=eeVR0BU9Qix3-9oISPtRcg&oh=00_AfYwuf4lMFNufDaECmdoi5JvhZONkK2N87JMYU-7EJ6Uzg&oe=68DA063C"
         overlayColor="from-indigo-800/80 to-blue-900/80"
       />
 
