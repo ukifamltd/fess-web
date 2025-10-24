@@ -16,6 +16,7 @@ import Programs from "./pages/Programs";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Publications from "./pages/Publications";
 
 const pageVariants = {
   initial: {
@@ -90,6 +91,14 @@ const AppContent: React.FC = () => {
               }
             />
 
+            <Route
+              path="/publications"
+              element={
+                <AnimatedPage>
+                  <Publications />
+                </AnimatedPage>
+              }
+            />
             <Route
               path="/gallery"
               element={

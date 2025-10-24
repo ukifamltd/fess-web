@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -30,13 +30,13 @@ const Header: React.FC = () => {
       color: 'hover:text-blue-400'
     },
     {
-      icon: Twitter,
-      href: '#',
-      color: 'hover:text-blue-300'
+      icon: Youtube,
+      href: 'https://youtu.be/SWdUJxhMvc0?si=OAqS3rqkatc_B9Bt',
+      color: 'hover:text-red-300'
     },
     {
       icon: Instagram,
-      href: '#',
+      href: 'https://www.instagram.com/fidrofa_excellence_school_fes?igsh=MWltd216eWVydXd6NA==',
       color: 'hover:text-pink-400'
     }
   ];
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   const contactInfo = [
     {
       icon: Phone,
-      text: '+250 786 328 657',
+      text: '+250 786 328 657 / +25 782 985 599',
       href: 'tel:+250786328657'
     },
     {
@@ -128,7 +128,11 @@ const Header: React.FC = () => {
                   transition={{ delay: 0.5 }}
                 >
                   <span className="text-xs font-semibold text-green-300">🎉</span>
+<<<<<<< HEAD
                   <span className="text-xs text-blue-100">Free Consultation!</span>
+=======
+                  <span className="text-xs text-blue-100">Donation</span>
+>>>>>>> 5b1f0eb (public dir fix and new files)
                 </motion.div> */}
               </div>
             </div>

@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { 
-  Facebook, 
-  Twitter, 
+  Facebook,
   Instagram, 
   Mail, 
   Phone, 
   MapPin,
   Heart,
-  ArrowRight
+  ArrowRight,
+  Youtube
 } from 'lucide-react';
 import Logo from './Logo';
 
@@ -47,14 +47,14 @@ const Footer: React.FC = () => {
       label: "Facebook"
     },
     {
-      icon: Twitter,
-      href: "#",
-      color: "hover:text-blue-300",
+      icon: Youtube,
+      href: 'https://youtu.be/SWdUJxhMvc0?si=OAqS3rqkatc_B9Bt',
+      color: "hover:text-red-300",
       label: "Twitter"
     },
     {
       icon: Instagram,
-      href: "#",
+      href: 'https://www.instagram.com/fidrofa_excellence_school_fes?igsh=MWltd216eWVydXd6NA==',
       color: "hover:text-pink-400",
       label: "Instagram"
     }
@@ -71,11 +71,11 @@ const Footer: React.FC = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      text: "Mayange, Bugesera"
+      text: "Bugesera, mayange, taba 58."
     },
     {
       icon: Phone,
-      text: '+250 786 328 657',
+      text: '+250 786 328 657 / +25 782 985 599',
       href: 'tel:+250786328657'
     },
     {

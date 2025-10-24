@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Sparkles, HandCoins } from "lucide-react";
 import HeroBanner from "../components/HeroBanner";
 import emailjs from "emailjs-com";
 
@@ -118,20 +118,16 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      {/* Background decorative circles - similar to About.tsx */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Large background circles */}
         <div className="absolute top-20 left-10 w-40 h-40 bg-blue-100/25 rounded-full -translate-x-20 -translate-y-10" />
         <div className="absolute top-10 right-20 w-32 h-32 bg-purple-100/25 rounded-full translate-x-16 -translate-y-8" />
         <div className="absolute bottom-20 left-20 w-36 h-36 bg-green-100/15 rounded-full -translate-x-18 translate-y-12" />
         <div className="absolute bottom-10 right-10 w-28 h-28 bg-pink-100/20 rounded-full translate-x-14 translate-y-8" />
 
-        {/* Medium circles */}
         <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-blue-200/30 rounded-full" />
         <div className="absolute top-2/3 right-1/3 w-14 h-14 bg-purple-200/35 rounded-full" />
         <div className="absolute bottom-1/4 left-1/3 w-12 h-12 bg-green-200/25 rounded-full" />
 
-        {/* Small sparkles */}
         <motion.div
           className="absolute top-1/4 right-1/4"
           animate={{ rotate: 360, scale: [1, 1.2, 1] }}
@@ -152,7 +148,7 @@ const Contact: React.FC = () => {
       <HeroBanner
         title="Get in Touch"
         subtitle="We'd love to hear from you and answer any questions"
-        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/503350238_10236865812562508_8223091699224919246_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yKkXL3xEBQIQ7kNvwG9Vu-l&_nc_oc=AdmchcUln3cbmrO24H0Vg1iMAoZpR-mcGhon2_GAlH-kH7_s8vytSw2sCVsCtPuuwWk6LHH8o5_X4A4ogrLAYuQx&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=rhQTiRmuqNU5IrPgyFh2hA&oh=00_AfabYAuhLzIofBLQmloGnPDf0IelldyInYZntuUgRIdjwQ&oe=68D9DF24"
+        backgroundImage="/images/298.jpg"
         overlayColor="from-purple-800/80 to-pink-900/80"
       />
 
@@ -178,13 +174,25 @@ const Contact: React.FC = () => {
                 className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <HandCoins className="w-6 h-6 text-orange-600" />
+                </div>
+                <div>
+                  <p className="font-semibold font-sans">Donations</p>
+                  <p className="text-gray-600 font-sans">nizeyimanaf@gmail.com</p>
+                  <p className="text-gray-600 font-sans"> <b>Bank account:</b> 100001698332 in  Bank of Kigali,</p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ x: 5 }}
+                className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all"
+              >
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <Mail className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <p className="font-semibold font-sans">Email</p>
-                  <p className="text-gray-600 font-sans">
-                    info@fidrofa.com
-                  </p>
+                  <p className="text-gray-600 font-sans">info@fidrofa.com</p>
                 </div>
               </motion.div>
 
@@ -197,7 +205,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-semibold font-sans">Phone</p>
-                  <p className="text-gray-600 font-sans">+250 786 328 657</p>
+                  <p className="text-gray-600 font-sans">
+                    +250 786 328 657 / +25 782 985 599{" "}
+                  </p>
                 </div>
               </motion.div>
 
@@ -211,7 +221,7 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="font-semibold font-sans">Address</p>
                   <p className="text-gray-600 font-sans">
-                    Eastern Province, Bugesera District, Mayange Sectory, Taba Cell
+                    Bugesera, mayange, taba 58.
                   </p>
                 </div>
               </motion.div>
@@ -229,7 +239,7 @@ const Contact: React.FC = () => {
 
               <div className="rounded-xl overflow-hidden shadow-md">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.53694547219!2d30.1394191!3d-1.968577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca76d8c0e46a9%3A0x7856f3b6c6c1b0e!2sKigali%20International%20Airport%20(KGL)!5e0!3m2!1sen!2srw!4v1700000000000!5m2!1sen!2srw"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.990446186838!2d30.1520603!3d-2.1943277999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c355571f8bb701%3A0x1d920a64f44fefe3!2sFidrofa%20Excellence%20School%20(Kumukorea)!5e1!3m2!1sen!2srw!4v1761052797211!5m2!1sen!2srw"
                   width="100%"
                   height="250"
                   style={{ border: 0 }}
@@ -240,10 +250,9 @@ const Contact: React.FC = () => {
                   title="Fidrofa Excellence School Location"
                 ></iframe>
               </div>
-
               <div className="mt-4">
                 <p className="text-gray-600 font-sans text-sm">
-                  Eastern Province, Bugesera District, Mayange Sectory, Taba Cell
+                  Address, Bugesera, mayange, taba 58.
                 </p>
               </div>
             </div>

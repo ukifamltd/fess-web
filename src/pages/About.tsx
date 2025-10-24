@@ -1,255 +1,144 @@
 import React from "react";
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
-import {
-  Users,
-  BookOpen,
-  GraduationCap,
-  Heart,
-  Target,
-  Shield,
-  Star,
-  Sparkles,
-} from "lucide-react";
+import { Target, Eye, Award } from "lucide-react";
 import HeroBanner from "../components/HeroBanner";
 
 const About: React.FC = () => {
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut" as const,
-      },
-    },
-  };
-
-  const stats = [
-    {
-      icon: GraduationCap,
-      value: "100%",
-      label: "Primary 6 Success Rate",
-      color: "text-blue-600",
-    },
-    {
-      icon: Users,
-      value: "200+",
-      label: "Happy Students",
-      color: "text-green-600",
-    },
-    {
-      icon: BookOpen,
-      value: "3",
-      label: "Education Levels",
-      color: "text-purple-600",
-    },
-    {
-      icon: Heart,
-      value: "100%",
-      label: "Quality Care",
-      color: "text-pink-600",
-    },
-  ];
-
-  const values = [
-    {
-      icon: Target,
-      title: "Excellence",
-      description:
-        "Striving for the highest standards in education and character development",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      icon: Shield,
-      title: "Discipline",
-      description:
-        "Fostering self-control, respect, and responsible behavior in all students",
-      color: "from-green-500 to-green-600",
-    },
-    {
-      icon: Heart,
-      title: "Care",
-      description:
-        "Providing nurturing environment with quality care and attention",
-      color: "from-pink-500 to-pink-600",
-    },
-    {
-      icon: Star,
-      title: "Confidence",
-      description:
-        "Building self-assured individuals ready to face future challenges",
-      color: "from-yellow-500 to-yellow-600",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      {/* Background decorative circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Large background circles */}
         <div className="absolute top-20 left-10 w-40 h-40 bg-blue-100/25 rounded-full -translate-x-20 -translate-y-10" />
         <div className="absolute top-10 right-20 w-32 h-32 bg-purple-100/25 rounded-full translate-x-16 -translate-y-8" />
         <div className="absolute bottom-20 left-20 w-36 h-36 bg-green-100/15 rounded-full -translate-x-18 translate-y-12" />
-        <div className="absolute bottom-10 right-10 w-28 h-28 bg-pink-100/20 rounded-full translate-x-14 translate-y-8" />
 
-        {/* Medium circles */}
-        <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-blue-200/30 rounded-full" />
-        <div className="absolute top-2/3 right-1/3 w-14 h-14 bg-purple-200/35 rounded-full" />
-        <div className="absolute bottom-1/4 left-1/3 w-12 h-12 bg-green-200/25 rounded-full" />
-
-        {/* Small sparkles */}
-        <motion.div
-          className="absolute top-1/4 right-1/4"
-          animate={{ rotate: 360, scale: [1, 1.2, 1] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <Sparkles className="w-4 h-4 text-blue-300/60" />
-        </motion.div>
-        <motion.div
-          className="absolute bottom-1/3 left-1/4"
-          animate={{ rotate: -360, scale: [1, 1.3, 1] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <Sparkles className="w-3 h-3 text-purple-300/50" />
-        </motion.div>
       </div>
 
-      {/* Hero Header Section with full-width background */}
       <HeroBanner
-        title="About Fidrofa Excellence School"
-        subtitle="Providing quality education and skills training for young minds in Bugesera District"
-        backgroundImage="https://scontent.fkgl4-1.fna.fbcdn.net/v/t39.30808-6/504119097_10236865811602484_4500494512390512443_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=uO0Md0VhhWcQ7kNvwH4AJ1Y&_nc_oc=AdnEtmQ_hBM6NxWd4gIt-DjkwuhtlcxhnY6inAvQVru6njMNdqjSDDRdVV7E40L1BXI_b_gvs9U4rAHvCLYIrufb&_nc_zt=23&_nc_ht=scontent.fkgl4-1.fna&_nc_gid=9wIwi89vOUvLDRdZMFqnDQ&oh=00_AfZUwRSMeSDhYbT7-_dtPHugBRI3rOh3bqX_5jJZZcgJOQ&oe=68DA022B"
+        title="About FIDROFA Excellence School"
+        subtitle="Transforming Communities Through Quality Education"
+        backgroundImage="/images/368.jpg"
+        overlayColor="from-blue-800/80 to-purple-900/80"
       />
 
       <div className="container mx-auto px-6 py-20 relative">
-        {/* Main Content */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20"
-        >
-          <motion.div variants={itemVariants} className="relative">
-            {/* Content background circle */}
-            <div className="absolute -top-8 -left-8 w-24 h-24 bg-blue-100/30 rounded-full -z-10" />
-            <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-purple-100/25 rounded-full -z-10" />
-
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-gray-800">
-              Our <span className="text-blue-600">Story</span>
-            </h2>
-            <div className="space-y-6">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Fidrofa Excellence School (FES) is a private school located in
-                Eastern Province, Bugesera District, just 2km from Kigali
-                International Airport. We are committed to providing quality
-                education, skills training, and job creation opportunities for
-                young people.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Our students are admired by the community as smart and
-                disciplined learners, and we take pride in our 100% success rate
-                in Primary 6 national examinations.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                At FES, we believe in building confident, hardworking
-                individuals who strive for excellence in everything they do.
-                Better future is assured at Fidrofa Excellence School.
-              </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          {/* Vision Card */}
+          <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-blue-100">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+                <Eye className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">Vision</h3>
             </div>
-          </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-2 gap-6"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all relative overflow-hidden group"
-              >
-                {/* Card background effect - More explicit gradient classes */}
-                <div
-                  className={`absolute inset-0 -z-10 opacity-10 group-hover:opacity-20 transition-opacity ${
-                    stat.color === "text-blue-600"
-                      ? "bg-gradient-to-br from-blue-600 to-white"
-                      : stat.color === "text-green-600"
-                      ? "bg-gradient-to-br from-green-600 to-white"
-                      : stat.color === "text-purple-600"
-                      ? "bg-gradient-to-br from-purple-600 to-white"
-                      : "bg-gradient-to-br from-pink-600 to-white"
-                  }`}
-                />
-                <stat.icon
-                  className={`w-12 h-12 mx-auto mb-4 ${stat.color} group-hover:scale-110 transition-transform`}
-                />
-                <div className={`text-2xl font-bold mb-2 ${stat.color}`}>
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 text-sm font-medium">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
-
-        {/* Values Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="mb-20"
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-800 mb-6">
-              Our <span className="text-blue-600">Values</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The core principles that guide everything we do at FES
+            <p className="text-lg text-gray-700 p-4 rounded-lg">
+              Educate and transform communities
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -8 }}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group"
-              >
-                <div
-                  className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${value.color}`}
-                />
-                <div className="text-center">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-r ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform`}
-                  >
-                    <value.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800 group-hover:text-blue-900 transition-colors">
-                    {value.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+          {/* Mission Card */}
+          <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-green-100">
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center">
+                <Target className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">Mission</h3>
+            </div>
+            <p className="text-lg text-gray-700 p-4 rounded-lg">
+              To provide affordable quality education for the transformation of
+              Taba communities
+            </p>
           </div>
-        </motion.div>
+        </div>
+
+
+        {/* Values Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Our Values
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              The core principles that guide everything we do at FIDROFA
+              Excellence School
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl shadow-lg p-8 text-center border-2 border-orange-100">
+              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-orange-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Hardworking
+              </h3>
+              <p className="text-gray-600">
+                We believe in the power of dedication and persistent effort in
+                achieving excellence
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8 text-center border-2 border-blue-100">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Excellence
+              </h3>
+              <p className="text-gray-600">
+                We strive for the highest standards in education and personal
+                development
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8 text-center border-2 border-green-100">
+              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Discipline
+              </h3>
+              <p className="text-gray-600">
+                We cultivate self-control and structured approach to learning
+                and growth
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* History Section */}
+        <div className="bg-white rounded-3xl shadow-2xl p-12">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Our History
+            </h2>
+            <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
+          </div>
+
+                   <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
+            <p className="mb-6">
+              <strong>FIDROFA Excellence School (FES)</strong> is a private school, operating in Eastern Province, Bugesera District, Mayange Sector, Kagenge cell and Taba village. It has been founded by <strong>DR. Nizeyimana Fidele</strong>, who did his Doctoral studies in South Korea.
+            </p>
+
+            <p className="mb-6">
+              During his studies in South Korea, Dr. Fidele was inspired by the Korean education, especially how education transformed South Korea from poverty into a global competitive knowledge based economy. Why then is FES so important to Dr. Fidele and why is it located in Taba village of Mayange and not elsewhere. FES is Dr. Fidele's <strong>"giving back to the community project"</strong>.
+            </p>
+
+            <p className="mb-6">
+              The inspiration to make this school came in Fall of 2017 when he visited his residence at Mayange from South Korea. While at his residence, he saw farmers and small businesses owners in his neighborhood and many children idle in the street during school hours, making much noise around his residence. These children could not keep quiet even when he asked them to do so. They could not help their parents in the farm, they could not assist in the family business and they were not even going to school.
+            </p>
+
+            <p className="mb-6">
+              Dr. Fidele perceived this situation as an alarming problem because during his nine years school life in South Korea, he learned that at the age of two, children start academic life by joining early childhood development (ECD) centers. From the age of two years children spend at school, they eat at school until evening, which makes it rare to see idle children moving around or making noises on the street day time.
+            </p>
+
+            <p className="mb-6">
+              Dr. Fidele felt a strong passion to initiate the FIDROFA Excellence School to contribute to the quality education back at home with the experience he acquired from South Korea. Since then, his long term dreams of establishing and owning a School became clear. In 2021, he initiated FES school with other income generating projects that promote quality education. FES areas of intervention are affordable quality education, economical transformation and creating jobs for Kangenge cell and Taba Village.
+            </p>
+
+            <p>
+              FES holistically address the needs for quality education in Kagenge Cell and Taba Village. Kagenge cell has a above 10,000 population of people and Taba Village resides above 2000 people. Above 70% people are farmers and small business owners. Children in Taba and other villages in Kagenge and beyond benefit from FES inclusive quality education.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

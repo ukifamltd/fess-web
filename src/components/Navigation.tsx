@@ -26,6 +26,7 @@ const Navigation: React.FC = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Programs", href: "/programs" },
+    { name: "Publications", href: "/publications" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
@@ -79,7 +80,6 @@ const Navigation: React.FC = () => {
       transition={{ duration: 0.6 }}
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Background circles remain the same */}
         <div className="absolute top-0 left-0 w-16 h-16 bg-blue-300/30 rounded-full -translate-x-8 -translate-y-8" />
         <div className="absolute top-0 right-0 w-20 h-20 bg-purple-300/40 rounded-full translate-x-10 -translate-y-10" />
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-200/50 rounded-full -translate-x-12 translate-y-8" />
@@ -97,7 +97,6 @@ const Navigation: React.FC = () => {
             withText={true}
           />
 
-          {/* Desktop Navigation - rest remains the same */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <div key={item.name} className="relative group">
@@ -148,7 +147,6 @@ const Navigation: React.FC = () => {
             ))}
           </div>
 
-          {/* CTA Button - remains the same */}
           <div className="hidden lg:block">
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -156,16 +154,15 @@ const Navigation: React.FC = () => {
               className="relative"
             >
               <Link
-                to="/about"
+                to="/Contact"
                 className="bg-blue-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition-colors shadow-lg relative overflow-hidden block"
               >
-                <span className="relative z-10">Learn more</span>
+                <span className="relative z-10">Donate</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300" />
               </Link>
             </motion.div>
           </div>
 
-          {/* Mobile menu button - remains the same */}
           <div className="lg:hidden">
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -181,7 +178,6 @@ const Navigation: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation - remains the same */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
