@@ -241,7 +241,7 @@ const Navigation: React.FC = () => {
                       to="/about"
                       className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors relative overflow-hidden block text-center"
                     >
-                      <span className="relative z-10">Learn more</span>
+                      <span className="relative z-10">Donate</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                     </Link>
                   </motion.div>
